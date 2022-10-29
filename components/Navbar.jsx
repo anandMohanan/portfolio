@@ -20,6 +20,7 @@ const Navbar = () => {
           className="animate-bounce"
           width={30}
           height={30}
+          alt="blob"
         />
       </Link>
 

@@ -42,8 +42,8 @@ const about = () => {
       </div> */}
       <section className="text-gray-200">
         <div className="max-w-6xl mx-auto px-5  ">
-          <p className="text-lg font-semibold text-center   leading-relaxed  mx-auto mt-5">
-            I'm Anand Mohanan currently pursuing my Bachelor's degree in
+          <p className="text-lg font-semibold text-center leading-relaxed mx-auto mt-5">
+            I am Anand Mohanan currently pursuing my Bachelors degree in
             electronics and communication engineering at saveetha engineering
             college.
           </p>

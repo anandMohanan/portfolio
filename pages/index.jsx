@@ -42,7 +42,7 @@ export default function Home() {
             transition={{ delay: 0.5, duration: 0.5 }}
             className="text-center text-2xl font-Source  text-prim  md:text-4xl font-bold py-2 hover:font-Rampart"
           >
-            Hi,I'm Anand Mohanan
+            Hi,I am Anand Mohanan
           </m.h1>
           <h2 className="py-2 text-sm font-normal md:text-base md:font-medium text-[#B9FFBD]">
             M(Graphql)RN stack , Cloud Computing
