@@ -22,7 +22,7 @@ export default function Home() {
       exit={{ opacity: 1 }}
       initial={{ y: "100%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
-      className=" bg-black w-full h-full absolute"
+      className=" bg-black w-full h-full "
     >
       <Navbar />
       <Head>

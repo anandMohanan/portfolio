@@ -127,14 +127,13 @@ const about = () => {
                     <div className="leading-relaxed md:text-base lg:text-base text-sm text-justify">
                       <ul className="list-disc ml-2 p-2 ">
                         <li>
-                          {" "}
-                          Well familiar with the{" "}
+                          Well familiar with the
                           <span className="text-prim">rust</span> programming
                           language,c ,c++,c#.
                         </li>
                         <li>
                           Basic knowledge on{" "}
-                          <span className="text-prim">golang</span>and{" "}
+                          <span className="text-prim">golang</span> and{" "}
                           <span className="text-prim">python</span>.
                         </li>
                       </ul>
