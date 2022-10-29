@@ -26,5 +26,24 @@ a {
   /* Change highlight background color to black */
   background: rgb(231, 146, 254);
   /* Change highlight text color to red */
-  color: hwb(92 50% 5%);
+  color: blue;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: hwb(92 50% 5%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hwb(0 100% 0%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

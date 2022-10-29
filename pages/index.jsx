@@ -22,7 +22,7 @@ export default function Home() {
       exit={{ opacity: 1 }}
       initial={{ y: "100%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
-      className=" bg-black w-full h-full "
+      className=" bg-black w-full h-full  md:absolute lg:absolute "
     >
       <Navbar />
       <Head>
@@ -30,7 +30,7 @@ export default function Home() {
         <meta name="description" content="Portfolio of Anand Mohanan" />
       </Head>
 
-      <main className="text-center p-10       ">
+      <main className="text-center p-10 ">
         <m.div
         // variants={container}
         // initial="hidden"
