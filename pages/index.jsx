@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
-import { motion as m } from "framer-motion";
 
 import {
   AiFillTwitterCircle,
@@ -13,17 +12,10 @@ import {
 
 import { HiDocument } from "react-icons/hi";
 
-import { container, item } from "../animation";
 export default function Home() {
   const year = new Date().getFullYear();
   return (
-    <m.div
-      animate={{ y: "0%" }}
-      exit={{ opacity: 1 }}
-      initial={{ y: "100%" }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-      className=" bg-black w-full h-full  md:absolute lg:absolute "
-    >
+    <div className=" bg-black w-full h-full  md:absolute lg:absolute ">
       <Navbar />
       <Head>
         <title>Anand Mohanan</title>
@@ -31,19 +23,14 @@ export default function Home() {
       </Head>
 
       <main className="text-center p-10 ">
-        <m.div
+        <div
         // variants={container}
         // initial="hidden"
         // animate="visible"
         >
-          <m.h1
-            animate={{ y: 0 }}
-            initial={{ y: "100%" }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-            className="text-center text-2xl font-Source  text-prim  md:text-4xl font-bold py-2 hover:font-Rampart"
-          >
+          <h1 className="text-center text-2xl font-Source  text-prim  md:text-4xl font-bold py-2 hover:font-Rampart">
             Hi,I am Anand Mohanan
-          </m.h1>
+          </h1>
           <h2 className="py-2 text-sm font-normal md:text-base md:font-medium text-[#B9FFBD]">
             M(Graphql)RN stack , Cloud Computing
           </h2>
@@ -53,16 +40,10 @@ export default function Home() {
             taking up challenges and exploring genres to work on self with the
             aim of an efficient,comprehensive and engaged working.
           </p>
-        </m.div>
+        </div>
       </main>
 
-      <m.div
-        variants={container}
-        initial="hidden"
-        animate="show"
-        transition={{ delay: 0.5, duration: 0.5 }}
-        className="text-5xl flex justify-center gap-16 z-10 py-12 mt-8 text-gray-600 dark:text-gray-400"
-      >
+      <div className="text-5xl flex justify-center gap-16 z-10 py-12 mt-8 text-gray-600 dark:text-gray-400">
         <Link
           className="cursor-pointer"
           href={"https://www.linkedin.com/in/anand-mohanan/"}
@@ -94,13 +75,13 @@ export default function Home() {
         >
           <HiDocument className="text-prim" />
         </Link>
-      </m.div>
+      </div>
 
       <footer className="text-center text-red-200">
         {" "}
         {year}
         <span className="text-lime-600">©</span> Anand Mohanan
       </footer>
-    </m.div>
+    </div>
   );
 }

@@ -1,21 +1,11 @@
 import Navbar from "../components/Navbar";
-import { motion as m } from "framer-motion";
-import { container, item } from "../animation";
+
 import Head from "next/head";
 
 const about = () => {
   const year = new Date().getFullYear();
   return (
-    <m.main
-      className="bg-black  w-full h-full font-Source"
-      animate={{ y: "0%" }}
-      exit={{ opacity: 1 }}
-      initial={{ y: "100%" }}
-      transition={{
-        duration: 0.75,
-        ease: "easeOut",
-      }}
-    >
+    <main className="bg-black  w-full h-full font-Source">
       <Navbar />
       <Head>
         <title>About</title>
@@ -61,13 +51,7 @@ const about = () => {
             </div>
           </div>
           <div className="flex flex-wrap  -mx-4  -mt-4 mb-4 ">
-            <m.div
-              variants={container}
-              initial="hidden"
-              animate="show"
-              transition={{ delay: 0.5, duration: 0.5 }}
-              className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col "
-            >
+            <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
               <div className="pattern-dots-md gray-light">
                 <div className="rounded bg-zinc-800 p-4 transform  -translate-y-6 hover:animate-bounce  ">
                   <div className="flex-grow">
@@ -89,7 +73,7 @@ const about = () => {
                   </div>
                 </div>
               </div>
-            </m.div>
+            </div>
 
             <div className="p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col ">
               <div className="pattern-dots-md gray-light">
@@ -195,7 +179,7 @@ const about = () => {
         {year}
         <span className="text-lime-600">©</span> Anand Mohanan
       </footer>
-    </m.main>
+    </main>
   );
 };
 
